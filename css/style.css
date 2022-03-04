@@ -1,0 +1,1085 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff1: 'Josefin Sans', sans-serif;
+    --ff2: 'Open Sans', sans-serif;
+    --ff3: 'Great Vibes', cursive;
+    --brand: #d50a51;
+    --hd: #000000;
+    --bt: #ffffff;
+    --pt: #444444;
+    --man: #222222;
+    --hl: #706f6f;
+    --banbd: #fbe7f0;
+    --hapy: #8a5e3b;
+    --copy: #f0c8db;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ======= common css end ======= */
+/* ======= fonts css start ======= */
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-24_21 {
+    font-size: 24.21px;
+}
+
+.fs-32_28 {
+    font-size: 32.28px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-42 {
+    font-size: 42px;
+}
+
+.fs-61 {
+    font-size: 61px;
+}
+
+.fs-84 {
+    font-size: 84px;
+}
+
+.jose-semibld {
+    font-family: var(--ff1);
+    font-weight: 600;
+}
+
+.jose-blod {
+    font-family: var(--ff1);
+    font-weight: 700;
+}
+
+.greatvi-reg {
+    font-family: var(--ff3);
+    font-weight: 400;
+}
+
+.opens-reg {
+    font-family: var(--ff2);
+    font-weight: 400;
+}
+
+.brand {
+    color: var(--brand);
+}
+
+.head-text {
+    color: var(--hd);
+}
+
+.btn {
+    color: var(--bt);
+}
+
+.p-text {
+    color: var(--pt);
+}
+
+.man-text {
+    color: var(--man);
+}
+
+.head-line {
+    color: var(--hl);
+}
+
+.happy {
+    color: var(--hapy);
+}
+
+.copy {
+    color: var(--copy);
+}
+
+.cap {
+    text-transform: capitalize;
+}
+
+.up {
+    text-transform: uppercase;
+}
+
+/* ======= fonts css end ======= */
+/* ======= preloader-part css start ======= */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/preload.jpg) no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader .round {
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--bt);
+    border-radius: 50%;
+
+}
+
+.preloader .round img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: chutachuti .9s infinite;
+}
+
+@keyframes chutachuti {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ======= preloader-part css end ======= */
+/* ======= header-part css start ======= */
+#header-part {
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    TOP: 0;
+    left: 0;
+    background: var(--bt);
+    transition: all linear .6s;
+}
+
+.menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px 0px #8a5e3b;
+}
+
+#header-part .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 100px;
+}
+
+#header-part .logo {
+    width: 170px;
+    height: 100px;
+}
+
+#header-part .menu-list {
+    width: 430px;
+    height: 100px;
+}
+
+#header-part .menu-list ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-part .menu-list ul a {
+    position: relative;
+}
+
+#header-part .menu-list ul a::after {
+    content: '';
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    opacity: 0;
+    transition: all linear .6s;
+    background: url(../images/hovar.png) no-repeat center / cover;
+}
+
+#header-part .menu-list ul a:hover {
+    color: var(--brand);
+}
+
+#header-part .menu-list ul a:hover::after {
+    opacity: 1;
+    bottom: -30px;
+    left: 0;
+}
+
+#header-part .btn {
+    width: 200px;
+    height: 100px;
+}
+
+#header-part .btn a {
+    padding: 10px 15px;
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    border-radius: 20px;
+    transition: all linear .6s;
+}
+
+#header-part .btn a:hover {
+    background-color: var(--brand);
+    color: var(--bt);
+}
+
+/* ======= header-part css end ======= */
+/* ======= banner css start ======= */
+#banner-part {
+    height: 700px;
+    background: var(--banbd);
+}
+
+#banner-part .banner-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner-part .img {
+    width: 570px;
+    height: 560px;
+    background: url(../images/first-img.png) no-repeat center / cover;
+    margin-top: 136px;
+}
+
+#banner-part .text {
+    width: 570px;
+    height: 700px;
+    text-align: center;
+}
+
+#banner-part .text h2 {
+    padding-top: 200px;
+}
+
+#banner-part .text p {
+    padding: 60px 0px;
+}
+
+#banner-part .text h4 {
+    padding: 14px 14px;
+    border: 1px solid var(--brand);
+    width: 230px;
+    margin: 0 auto;
+    border-radius: 20px;
+    transition: all linear .6s;
+}
+
+#banner-part .text h4:hover {
+    color: var(--bt);
+    background: var(--brand);
+}
+
+/* ======= banner css end ======= */
+/* ======= history css start ======= */
+#history-part {
+    height: 600px;
+}
+
+#history-part .history-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#history-part .img {
+    width: 570px;
+    height: 500px;
+    margin-top: 200px;
+    background: url(../images/history.png) no-repeat center / cover;
+}
+
+#history-part .text {
+    width: 570px;
+    height: 600px;
+    position: relative;
+}
+
+#history-part .text::after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: url(../images/before.png) no-repeat center / cover;
+}
+
+#history-part .text h2 {
+    padding-top: 125px;
+    margin-left: 40px;
+    line-height: 34px;
+}
+
+#history-part .text p {
+    width: 570px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    line-height: 26px;
+}
+
+#history-part .text span {
+    line-height: 26px;
+}
+
+/* ======= history css end ======= */
+/* ======= gift-part css start ======= */
+#gift-part {
+    height: 540px;
+    margin-top: 120px;
+    background: var(--banbd);
+}
+
+#gift-part .gift-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#gift-part .text {
+    width: 570px;
+    height: 540px;
+    position: relative;
+}
+
+#gift-part .text::after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: url(../images/before.png) no-repeat center / cover;
+}
+
+#gift-part .text h2 {
+    padding-top: 125px;
+    margin-left: 40px;
+    line-height: 34px;
+}
+
+#gift-part .text p {
+    width: 570px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    line-height: 26px;
+}
+
+#gift-part .text p span {
+    line-height: 26px;
+}
+
+#gift-part .img {
+    width: 600px;
+    height: 750px;
+    position: relative;
+}
+
+#gift-part .img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(../images/gift.png) no-repeat center / cover;
+    position: absolute;
+    top: -180px;
+    left: 0;
+
+}
+
+#gift-part .btn {
+    width: 570px;
+    height: 60px;
+    margin-top: 30px;
+    display: flex;
+}
+
+#gift-part .btn .text-btn {
+    width: 150px;
+    height: 60px;
+}
+
+#gift-part h3 {
+    padding: 10px 14px;
+    width: 120px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    transition: all linear .6s;
+}
+
+#gift-part h3:hover {
+    color: var(--bt);
+    background: var(--brand);
+}
+
+#gift-part .btn h4 {
+    padding: 10px 15px;
+    width: 170px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    transition: all linear .6s;
+}
+
+#gift-part h4:hover {
+    color: var(--bt);
+    background: var(--brand);
+}
+
+/* ======= gift-part css end ======= */
+/* ======= ticket css start ======= */
+#ticket-part {
+    height: 380px;
+    margin-top: 50px;
+
+}
+
+#ticket-part .ticket-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ticket-part .img {
+    width: 570px;
+    height: 380px;
+    background: url(../images/ticket.png) no-repeat center / cover;
+}
+
+#ticket-part .text {
+    width: 570px;
+    height: 380px;
+    position: relative;
+}
+
+#ticket-part .text::after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 330px;
+    right: 120px;
+    background: url(../images/after.png) no-repeat center / cover;
+}
+
+#ticket-part .text h2 {
+    padding-top: 10px;
+    margin-left: 300px;
+    line-height: 34px;
+}
+
+#ticket-part .text h5 {
+    margin-left: 200px;
+}
+
+#ticket-part .text p {
+    width: 570px;
+    margin: 0 auto;
+    padding: 30px 0px;
+    line-height: 26px;
+}
+
+#ticket-part .text p span {
+    line-height: 26px;
+}
+
+#ticket-part .btn {
+    width: 570px;
+    height: 60px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+#ticket-part .btn .text-btn {
+    width: 150px;
+    height: 60px;
+}
+
+#ticket-part h3 {
+    padding: 10px 14px;
+    width: 120px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    transition: all linear .6s;
+}
+
+#ticket-part h3:hover {
+    color: var(--bt);
+    background: var(--brand);
+}
+
+#ticket-part .btn h4 {
+    padding: 10px 15px;
+    width: 170px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    transition: all linear .6s;
+}
+
+#ticket-part h4:hover {
+    color: var(--bt);
+    background: var(--brand);
+}
+
+/* ======= ticket css end ======= */
+/* ======= services css start ======= */
+#services-part {
+    height: 670px;
+    margin-top: 95px;
+}
+
+#services-part .services-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#services-part .item {
+    width: 370px;
+    height: 670px;
+}
+
+#services-part .item-1 {
+    width: 370px;
+    height: 370px;
+    transition: all linear .6s;
+}
+
+#services-part .item-1:hover {
+    box-shadow: 10px 0px 0px 0px var(--brand);
+    margin-bottom: 10px;
+    background: rgb(175, 171, 171);
+}
+
+#services-part .item-1 h4 {
+    padding-top: 90px;
+    margin-left: 30px;
+}
+
+#services-part .item-1 h4 img {
+    margin-right: 20px;
+}
+
+#services-part .item-1 h3 {
+    margin-left: 30px;
+}
+
+#services-part .item-1 p {
+    width: 370px;
+    margin: 0 auto;
+    padding: 25px 0px;
+    line-height: 26px;
+}
+
+#services-part span {
+    line-height: 26px;
+}
+
+#services-part .item-2 {
+    width: 370px;
+    height: 300px;
+    transition: all linear .6s;
+}
+
+#services-part .item-2 h4 img {
+    margin-right: 10px;
+}
+
+#services-part .item-2:hover {
+    box-shadow: 10px 0px 0px 0px var(--brand);
+    background: rgb(175, 171, 171);
+}
+
+/* ======= services css end ======= */
+/* ======= gallery css start ======= */
+#gallery-part {
+    height: 870px;
+    margin-top: 60px;
+}
+
+#gallery-part .gallery-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gallery-part .item {
+    width: 370px;
+    height: 870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#gallery-part .item-1 {
+    width: 370px;
+    height: 420px;
+}
+
+#gallery-part .item-1 h4 {
+    margin-left: 230px;
+    margin-top: 60px;
+}
+
+#gallery-part .item-1 h3 {
+    margin-left: 60px;
+    padding-bottom: 30px;
+}
+
+#gallery-part .item-1 p {
+    margin-bottom: 20px;
+}
+
+#gallery-part .img-1 {
+    position: relative;
+}
+
+#gallery-part .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0)rotate(-360deg);
+    transition: all linear .6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#gallery-part .img-1:hover .overlay {
+    transform: scale(1) rotate(0deg);
+}
+
+#gallery-part .overlay .icon {
+    width: 70px;
+    height: 270px;
+    margin-top: 10px;
+    margin-left: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#gallery-part .overlay .icon i {
+    padding: 20px 20px;
+    border: 1px solid var(--bt);
+    border-radius: 50%;
+    color: var(--bt);
+    transition: all linear .9s;
+}
+
+#gallery-part .overlay .icon i:hover {
+    color: var(--bt);
+    background: var(--brand);
+}
+
+#gallery-part .overlay .caption {
+    width: 370px;
+    height: 50px;
+    text-align: center;
+    color: var(--bt);
+}
+
+#gallery-part .overlay .caption {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#gallery-part .item-2 {
+    width: 370px;
+    height: 420px;
+}
+
+#gallery-part .item-2 .img {
+    width: 370px;
+    height: 420px;
+}
+
+#gallery-part .btn {
+    width: 370px;
+    height: 60px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 60px;
+}
+
+#gallery-part .btn .text-btn {
+    width: 180px;
+    height: 80px;
+}
+
+#gallery-part .btn .text-btn h2 {
+    padding: 0px 10px;
+    border: 1px solid var(--brand);
+    border-radius: 30px;
+    color: var(--brand);
+    transition: all linear .6s;
+}
+
+#gallery-part .btn .text-btn h2:hover {
+    color: #fff;
+    background: var(--brand);
+}
+
+/* ======= gallery css end ======= */
+/* ======= counter css end ======= */
+#counter-part {
+    height: 250px;
+    background: url(../images/counter-bg.png) no-repeat center / cover;
+    margin: 100px 0px;
+}
+
+#counter-part .counter-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#counter-part .item {
+    width: 270px;
+    height: 250px;
+    text-align: center;
+}
+
+#counter-part .item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* ======= counter css end ======= */
+/* ======= proposal css end ======= */
+#proposal-part {
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+#proposal-part .proposal-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#proposal-part .item {
+    width: 570px;
+    height: 400px;
+    position: relative;
+    background: #fffae2;
+}
+
+#proposal-part .item p {
+    padding-top: 60px;
+    padding-bottom: 55px;
+    width: 520px;
+    margin: 0 auto;
+    line-height: 36px;
+}
+
+#proposal-part .item .jpn {
+    width: 570px;
+    height: 130px;
+    display: flex;
+}
+
+#proposal-part .item::before {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: url(../images/testi-before.png) no-repeat center / cover;
+    position: absolute;
+    top: -45px;
+    left: -40px;
+}
+
+#proposal-part .item::after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: url(../images/testi-after.png) no-repeat center / cover;
+    position: absolute;
+    bottom: -45px;
+    right: -40px;
+}
+
+#proposal-part .item .jpn .img {
+    width: 130px;
+    height: 130px;
+}
+
+#proposal-part .item .jpn .img {
+    margin-left: 20px;
+    line-height: 130px;
+}
+
+#proposal-part .item .jpn .text {
+    width: 250px;
+    height: 130px;
+}
+
+#proposal-part .item .jpn .text h3 {
+    padding-top: 50px;
+}
+
+/* ======= proposal css end ======= */
+/* ======= footer-part css end ======= */
+#footer-part {
+    height: 450px;
+    background: var(--banbd);
+    margin-top: 180px;
+    position: relative;
+}
+
+#footer-part .news-part {
+    height: 120px;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+}
+
+#footer-part .news-part .news-main {
+    height: 120px;
+    background: var(--brand);
+    border-radius: 50px;
+    display: flex;
+    box-shadow: 0px 0px 5px 10px #88c0ab;
+}
+
+#footer-part .news-part .item-1 {
+    width: 400px;
+    height: 120px;
+    display: flex;
+    margin-left: 70px;
+}
+
+#footer-part .news-part .item-1 .logo {
+    width: 50px;
+    height: 120px;
+    line-height: 120px;
+}
+
+#footer-part .news-part .item-1 .text {
+    width: 350px;
+    height: 120px;
+    padding-top: 30px;
+    margin-left: 5px;
+}
+
+#footer-part .news-part .item-2 {
+    width: 600px;
+    height: 120px;
+    display: flex;
+}
+
+#footer-part .news-part .item-2 .box-1 {
+    width: 270px;
+    height: 120px;
+    line-height: 120px;
+    margin-right: 10px;
+}
+
+.box-1 input {
+    text-align: center;
+    width: 270px;
+    height: 40px;
+    border: 1px solid var(bt);
+    color: var(--bt);
+    background: var(--brand);
+}
+
+#footer-part .news-part .item-2 .box {
+    width: 270px;
+    height: 120px;
+    line-height: 120px;
+    margin-right: 10px;
+}
+
+.box input {
+    text-align: center;
+    width: 220px;
+    height: 40px;
+    border: 1px solid var(bt);
+    color: var(--bt);
+    background: var(--brand);
+}
+
+.box button {
+    width: 50px;
+    height: 40px;
+    margin-left: -5px;
+    border: 1px solid var(bt);
+    color: var(--bt);
+    background: var(--brand);
+}
+
+#footer-part .footer-main {
+    padding-top: 70px;
+}
+
+#footer-part .footer-main .logo {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+
+#footer-part .footer-main .footer-item {
+    height: 120px;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+#footer-part .footer-main .footer-item .item {
+    width: 370px;
+    height: 120px;
+    display: flex;
+}
+
+#footer-part .footer-main .footer-item .item .icon {
+    width: 60px;
+    height: 120px;
+    margin-right: 10px;
+    line-height: 120px;
+    text-align: center;
+}
+
+#footer-part .footer-main .footer-item .item .icon a {
+    padding: 15px 15px;
+    border: 1px solid var(--brand);
+    border-radius: 50%;
+    transition: all linear .6s;
+    color: var(--brand);
+}
+
+#footer-part .footer-main .footer-item .item .icon a:hover {
+    color: var(--bt);
+    background: var(--brand);
+}
+
+#footer-part .footer-main .footer-item .item .text {
+    width: 280px;
+    height: 120px;
+    padding-top: 40px;
+}
+
+#footer-part .follow {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#footer-part .socail-icon {
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+
+#footer-part .socail-icon a {
+    padding: 15px 15px;
+    border: 1px solid var(--brand);
+    border-radius: 50%;
+    margin-left: 5px;
+    color: var(--brand);
+    transition: all linear .6s;
+}
+
+#footer-part .socail-icon a:hover {
+    color: var(--bt);
+    background: var(--brand);
+}
+
+/* ======= footer-part css end ======= */
+/* ======= copyright-part css end ======= */
+#copyright-part {
+    height: 60px;
+    background: var(--copy);
+}
+
+#copyright-part .copyright-main {
+    text-align: center;
+    line-height: 60px;
+}
+
+/* ======= copyright-part css end ======= */
+/* ======= back-to-top-part css end ======= */
+.back-to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 9999;
+    animation: shoriletelbeshi 3s infinite;
+}
+
+@keyframes shoriletelbeshi {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.back-to-top i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--brand);
+    cursor: pointer;
+    border: 1px solid var(--brand);
+}
+
+/* ======= back-to-top-part css end ======= */
